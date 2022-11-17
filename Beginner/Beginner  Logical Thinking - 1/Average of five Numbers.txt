@@ -1,0 +1,63 @@
+Problem Description
+
+Given 5 numbers A, B, C, D, E as input. Print the average of these 5 numbers (correct up to 2 decimal places).
+--------------------------------------------------------------------------------------------------------------
+
+Problem Constraints
+
+1 <= A, B, C, D, E <= 104
+
+--------------------------------------------------------------------------------------------------------------
+
+Input Format
+
+There are five lines in the input.
+Each line has an integer.
+--------------------------------------------------------------------------------------------------------------
+
+Output Format
+
+Print the average of the input numbers (correct up to 2 decimal places).
+--------------------------------------------------------------------------------------------------------------
+
+Example Input
+
+Input:-
+22
+51
+2
+7
+73
+--------------------------------------------------------------------------------------------------------------
+
+Example Output
+
+Output:-
+31.00
+--------------------------------------------------------------------------------------------------------------
+
+								Solution(C++)
+--------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<cmath>
+
+#include<bits/stdc++.h>
+using namespace std;
+#include <iomanip>
+int main()  {
+    // YOUR CODE GOES HERE
+    // Please take input and print output to standard input/output (stdin/stdout)
+    // E.g. 'cin' for input & 'cout' for output
+    double a,b,c,d,e,f,avg;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+    cin>>e;
+    f=(a+b+c+d+e)/5;
+    
+    cout << fixed;
+    cout << setprecision(2);
+    cout << f;
+    return 0;
+}

@@ -1,0 +1,51 @@
+Given two names A and B as input. Print "A says Hi to B". where A and B are the names in input.
+------------------------------------------------------------------------------------------------
+
+Problem Constraints
+
+1 <= len(A), len(B) <= 15
+Characters in A and B are in lowercase English Alphabets.
+------------------------------------------------------------------------------------------------
+
+Input Format
+
+There are two input lines
+The first line has a string A.
+The second line has a string B.
+------------------------------------------------------------------------------------------------
+
+Output Format
+
+Print in a single line A says Hi to B.
+------------------------------------------------------------------------------------------------
+
+Example Input
+
+Input:-
+Ram
+Shyam
+
+------------------------------------------------------------------------------------------------
+Example Output
+
+Output:-
+Ram says Hi to Shyam
+
+------------------------------------------------------------------------------------------------
+						Solution(C++)
+------------------------------------------------------------------------------------------------
+
+#include<iostream>
+
+using namespace std;
+
+int main()  {
+    // YOUR CODE GOES HERE
+    // Please take input and print output to standard input/output (stdin/stdout)
+    // E.g. 'cin' for input & 'cout' for output
+    string a,b;
+    cin>>a;
+    cin>>b;
+    cout<< a <<" says Hi to "<<b; 
+    return 0;
+}
