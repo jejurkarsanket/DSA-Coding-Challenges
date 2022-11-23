@@ -1,0 +1,61 @@
+Problem Description
+----------------------------------------------------------------------------------------------------
+Write a program to print all Natural numbers from N to 1 where you have to take N as input from user
+----------------------------------------------------------------------------------------------------
+
+Problem Constraints
+
+1 <= N <= 10000000
+----------------------------------------------------------------------------------------------------
+
+
+Input Format
+
+A single line representing N
+----------------------------------------------------------------------------------------------------
+
+
+Output Format
+
+N space separated integers from N to 1.
+----------------------------------------------------------------------------------------------------
+
+
+Example Input
+
+Input 1:
+
+5
+Input 2:
+
+10
+----------------------------------------------------------------------------------------------------
+
+Example Output
+
+Output 1:
+
+5 4 3 2 1 
+Output 2:
+
+10 9 8 7 6 5 4 3 2 1 
+----------------------------------------------------------------------------------------------------
+					Solution(C++)
+----------------------------------------------------------------------------------------------------
+#include<iostream>
+
+using namespace std;
+
+int main()  {
+    // YOUR CODE GOES HERE
+    // Please take input and print output to standard input/output (stdin/stdout)
+    // E.g. 'cin' for input & 'cout' for output
+    int a ;
+    cin>>a;
+    for(int i=a ;i>=1;i--)
+    {
+        cout<<i<<" ";
+        
+    }
+    return 0;
+}
