@@ -52,3 +52,23 @@ Explanation 2:
 							Solution(C#)
 ----------------------------------------------------------------------------------------------------
 
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     public ListNode(int x) {this.val = x; this.next = null;}
+ * }
+ */
+class Solution {
+    public int solve(ListNode A) {
+      ListNode slow,fast;
+      fast = slow = A;
+      while(fast!=null && fast.next != null)
+      { slow = slow.next; fast = fast.next.next;
+      }
+      return slow.val;
+    }
+}
+
+
