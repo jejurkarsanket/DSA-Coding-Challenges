@@ -69,7 +69,6 @@ Explanation 2:
  *     public TreeNode(int x) {this.val = x; this.left = this.right = null;}
  * }
  */
-using System.Collections;
 class Solution {
     public List<int> inorderTraversal(TreeNode A) {
         List<int> retList = new List<int>();
