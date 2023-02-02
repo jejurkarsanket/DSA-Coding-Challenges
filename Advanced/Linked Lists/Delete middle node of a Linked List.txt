@@ -33,16 +33,19 @@ class Solution {
         temp = A;
         int listSize = 0;
         int deleteNodeLocation = 0;
+
         while(temp != null)
         {
             listSize++;
             temp = temp.next;
         }
+
         if(listSize == 1)
         {
             A = null;
             return null;
         }
+
         deleteNodeLocation = listSize/2;
         temp = A;
         //if(deleteNodeLocation/2 == 0){deleteNodeLocation++;}
